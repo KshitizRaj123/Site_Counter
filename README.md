@@ -60,8 +60,4 @@ curl http://localhost:3500/unknown
 ```
 
 
-## Notes & improvements
-- The middleware writes `counter.json` on every request — for high traffic consider batching writes or using a proper datastore.
-- Consider adding error handling around file reads/writes and a lock if multiple processes may write concurrently.
 
-If you want, I can add a small endpoint to view the current counts (e.g., `/stats`).
